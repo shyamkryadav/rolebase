@@ -1,0 +1,59 @@
+<div class=" text-center ">
+
+    <mat-label>Title</mat-label>
+    <mat-form-field class="example-full-width  me-5">
+        <input matInput  (keyup)="applyFilter($event)" placeholder="Filter value" >
+    </mat-form-field>
+
+    <mat-label class="ms-5">Priority</mat-label >
+    <mat-form-field >
+        <mat-select disableRipple>
+          <mat-option value="all">All</mat-option>
+          <mat-option value="2">Option 2</mat-option>
+          <mat-option value="3">Option 3</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+
+<!-- table section  -->
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8 ">
+    <!-- Position Column -->
+    <ng-container matColumnDef="title">
+      <mat-header-cell *matHeaderCellDef>Title </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="priority">
+      <mat-header-cell *matHeaderCellDef> Priority </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.priority}} </mat-cell>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.status}} </mat-cell>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="dueDate">
+      <mat-header-cell *matHeaderCellDef> Due Date </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.dueDate}} </mat-cell>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="department">
+      <mat-header-cell *matHeaderCellDef> Department </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.department}} </mat-cell>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="requestType">
+      <mat-header-cell *matHeaderCellDef>Request Type </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.requestType}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>

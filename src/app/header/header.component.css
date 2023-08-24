@@ -22,8 +22,9 @@
 }
 
 .navBox .nav-item:hover{
-    background: #fbf3ed;
-    border-top: 1px solid rgb(54, 82, 240);
+    background: white;
+    border-top: 3px solid rgb(54, 82, 240);
+
 }
 .navBox li a:hover{
     color: black;
