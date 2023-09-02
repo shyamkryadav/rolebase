@@ -10,24 +10,27 @@
         <button class="btn btn-outline-danger w-100" >Rejected</button>
         <button class="btn btn-outline-secondary w-100" >Duplicate</button>
       </div>
+
       <div class="col-9">
         <div class="row">
-          <div class="col-6 ">
-            <section class="my-4 px-3 py-3 border bg-white shadow" >
-              <h4 class="m-0">Parking Pass</h4>
-              <button class="btn btn-success rounded-5 me-2 px-4 py-0 " >Closed</button>
+
+          <div class="col-6 " *ngFor="let data of ticketData">
+            <section class="my-4 px-3 py-3 border bg-white shadow"  >
+              <h4 class="m-0">{{data.title}}</h4>
+              <button class="btn btn-success rounded-5 me-2 px-4 py-0 " >{{data.status}}</button>
               <button class="btn btn-warning rounded-5  mx-2  px-4 py-0" >High</button>
               <div class="d-flex">
                 <img src="../assets/img/user.jpg"  width="20px" height="20px" alt="">
                 <h4 class=" mx-2">Rexa Dorrani</h4>
               </div>
               <div class="d-flex justify-content-between">
-                <p> <i class='far fa-calendar mx-2'></i>12/2/2021</p>
+                <p> <i class='far fa-calendar mx-2'></i>{{data.dueDate}}</p>
                 <p><i class="fa-solid fa-bottle-droplet"></i> 23</p>
               </div>
             </section>
           </div>
-          <div class="col-6">
+
+          <!-- <div class="col-6">
             <section class="my-4 px-3 py-3 border bg-white shadow" >
               <h4 class="m-0">Laptop RAM Upgrade </h4>
               <button class="btn btn-secondary rounded-5 me-2 px-4 py-0 " >Duplicate</button>
@@ -75,7 +78,9 @@
               </div>
             </section>
           </div>
-        </div>
+        </div> -->
+
+
       </div>
     
     </div>

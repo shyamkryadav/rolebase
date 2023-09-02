@@ -16,6 +16,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
+import { AssignedFormComponent } from './assigned-form/assigned-form.component';
 
 
 
@@ -25,7 +27,8 @@ import {MatTableModule} from '@angular/material/table';
     HeaderComponent,
     AllTicketsComponent,
     AssignedComponent,
-    AllTicketComponent
+    AllTicketComponent,
+    AssignedFormComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

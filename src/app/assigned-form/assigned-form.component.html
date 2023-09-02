@@ -1,0 +1,44 @@
+<form #assignedForm="ngForm" (ngSubmit)="getFormData(assignedForm.value)"  >
+ <div class="d-flex justify-content-around  my-5 ">
+    <input type="text" ngModel  name="title" id="title" placeholder="Title"><br>
+    
+    <input type="text" ngModel  name="priority" id="priority" placeholder="priority"><br>
+
+    <input type="text" ngModel  name="status" id="Status" placeholder="status"><br>
+
+    <input type="date" ngModel  name="dueDate" id="dueDate" placeholder="dueDate"><br>
+
+    <input type="text" ngModel  name="department" id="department" placeholder="department"><br>
+
+    <input type="text" ngModel name="requestType" id="requestType" placeholder="Request Type"><br>
+ </div>
+
+    <button class="btn btn-secondary">Add New Tickets</button>
+</form>
+
+
+
+
+<!-- <form #assignedForm="ngForm" (ngSubmit)="getFormData(assignedForm.value)" >
+
+    <label for="title">Title</label>
+    <input type="text" ngModel  name="title" id=""><br>
+
+    <label for="priority">Priority</label>
+    <input type="text" ngModel  name="priority" id=""><br>
+
+    <label for="Status">Status</label>
+    <input type="text" ngModel  name="status" id=""><br>
+
+    <label for="dueDate">Due Date</label>
+    <input type="text" ngModel  name="dueDate" id=""><br>
+
+    <label for="department">Department/label>
+    <input type="text" ngModel  name="department" id=""><br>
+
+    <label for="requestType">Requiest Type</label>
+    <input type="text" ngModel name="requestType" id=""><br>
+    
+    <button class="btn btn-secondary">Add New Tickets</button>
+
+</form> -->
