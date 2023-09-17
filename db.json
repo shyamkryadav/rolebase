@@ -1,45 +1,9 @@
 {
   "tickets": [
     {
-      "id": 1,
-      "title": "parking-pass",
-      "priority": "High",
-      "status": "closed",
-      "dueDate": "12/3/2021",
-      "department": "it",
-      "requestType": "Parking"
-    },
-    {
-      "id": 2,
-      "title": "new-parking tag",
-      "priority": "Normal",
-      "status": "pending",
-      "dueDate": "12/3/2021",
-      "department": "it",
-      "requestType": "computer issues"
-    },
-    {
-      "id": 3,
-      "title": "new-parking tag",
-      "priority": "High",
-      "status": "pending",
-      "dueDate": "12/3/2021",
-      "department": "it",
-      "requestType": "computer issues"
-    },
-    {
-      "title": "cvcxvx",
-      "priority": "xcvxv",
-      "status": "cvxvx",
-      "dueDate": "cvxc",
-      "department": "xcvxc",
-      "requestType": "xcvxc",
-      "id": 4
-    },
-    {
       "title": "hardware",
       "priority": "no",
-      "status": "pending",
+      "status": "Pending",
       "dueDate": "2023-08-08",
       "department": "medical",
       "requestType": "mobiel issue",
@@ -48,20 +12,101 @@
     {
       "title": "hardware",
       "priority": "no",
-      "status": "pending",
+      "status": "Pending",
       "dueDate": "2023-08-08",
       "department": "medical",
       "requestType": "mobiel issue",
       "id": 6
     },
     {
-      "title": "",
-      "priority": "",
-      "status": "",
-      "dueDate": "",
-      "department": "",
-      "requestType": "",
-      "id": 7
+      "title": "bus",
+      "priority": "Normal",
+      "status": "Reject",
+      "dueDate": "2023-09-06",
+      "department": "electrical",
+      "requestType": "10",
+      "id": 8
+    },
+    {
+      "title": "dssa",
+      "priority": "Normal",
+      "status": "Reject",
+      "dueDate": "2023-09-12",
+      "department": "medical",
+      "requestType": "mobiel issue",
+      "id": 14
+    },
+    {
+      "title": "dssa",
+      "priority": "Normal",
+      "status": "Reject",
+      "dueDate": "2023-09-12",
+      "department": "medical",
+      "requestType": "mobiel issue",
+      "id": 15
+    },
+    {
+      "title": "shyam",
+      "priority": "Normal",
+      "status": "Duplicated",
+      "dueDate": "2023-09-25",
+      "department": "medical",
+      "requestType": "good",
+      "id": 16
+    },
+    {
+      "title": "shyam",
+      "priority": "Normal",
+      "status": "Pending",
+      "dueDate": "2023-08-30",
+      "department": "shop",
+      "requestType": "goods",
+      "id": 17
+    },
+    {
+      "title": "Ram",
+      "priority": "Normal",
+      "status": "Pending",
+      "dueDate": "2023-09-07",
+      "department": "Ecommerce",
+      "requestType": "water",
+      "id": 18
+    },
+    {
+      "title": "zczc",
+      "priority": "Normal",
+      "status": "Closed",
+      "dueDate": "2023-09-26",
+      "department": "Ecommerce",
+      "requestType": "xcvxc",
+      "id": 19
+    },
+    {
+      "title": "zczc",
+      "priority": "Normal",
+      "status": "Closed",
+      "dueDate": "2023-09-26",
+      "department": "Ecommerce",
+      "requestType": "xcvxc",
+      "id": 20
+    },
+    {
+      "title": "fgsdg",
+      "priority": "High",
+      "status": "Pending",
+      "dueDate": "2023-09-05",
+      "department": "sdfgsdg",
+      "requestType": "dsfgsdg",
+      "id": 21
+    },
+    {
+      "title": "fgsdg",
+      "priority": "Normal",
+      "status": "Closed",
+      "dueDate": "2023-09-05",
+      "department": "sdfgsdg",
+      "requestType": "dsfgsdg",
+      "id": 22
     }
   ]
 }

@@ -10,7 +10,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './header/header.component';
 import { AllTicketsComponent } from './all-tickets/all-tickets.component';
 import { AssignedComponent } from './assigned/assigned.component';
-import { AllTicketComponent } from './all-ticket/all-ticket.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -18,6 +17,8 @@ import {FormsModule} from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { AssignedFormComponent } from './assigned-form/assigned-form.component';
+import { OvredueTicketComponent } from './ovredue-ticket/ovredue-ticket.component';
+import { DatePipe } from '@angular/common';
 
 
 
@@ -27,8 +28,8 @@ import { AssignedFormComponent } from './assigned-form/assigned-form.component';
     HeaderComponent,
     AllTicketsComponent,
     AssignedComponent,
-    AllTicketComponent,
-    AssignedFormComponent
+    AssignedFormComponent,
+    OvredueTicketComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,8 @@ import { AssignedFormComponent } from './assigned-form/assigned-form.component';
     MatFormFieldModule,
     FormsModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    DatePipe
   ],
   providers: [],
   bootstrap: [AppComponent]

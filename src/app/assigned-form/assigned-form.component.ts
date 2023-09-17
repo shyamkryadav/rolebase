@@ -16,5 +16,7 @@ export class AssignedFormComponent {
       this._ProxcyDataService.getAssignData(data).subscribe((result)=>{
         console.log(result)
       })
+
+      console.log(data)
   }
 }

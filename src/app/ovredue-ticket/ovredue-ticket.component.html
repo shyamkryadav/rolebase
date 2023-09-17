@@ -1,0 +1,42 @@
+<div class="col-12 px-5">
+  <div class="py-3 ms-5">
+    <span class="fw-bold fs-4" >OverDue</span>
+
+    <input class="w-25 mx-5 fw-bold "
+      type="range"
+      [(ngModel)]="sliderValue"
+      (input)="updateValue($event)"
+    /> 
+    <span class="fw-bold fs-4">{{sliderValue}}Days</span>
+
+  </div>
+
+  <div class="row">
+    <div class="col-6 col-md-3" *ngFor="let data of ticketData">
+      <section class="my-4 px-3 py-3 border bg-white shadow">
+        <h4 class="m-0">{{ data.title }}</h4>
+        <button
+          class="btn rounded-5 me-2 px-4 py-0"
+          [ngClass]="{
+            all: data.status == 'all',
+            pending: data.status == 'pending',
+            close: data.status == 'closed',
+            reject: data.status == 'reject',
+            duplicate: data.status == 'duplicate'
+          }"
+        >
+          {{ data.status }}
+        </button>
+        <button class="btn btn-warning rounded-5 mx-2 px-4 py-0">High</button>
+        <div class="d-flex">
+          <img src="../assets/img/user.jpg" width="20px" height="20px" alt="" />
+          <h4 class="mx-2">Rexa Dorrani</h4>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p><i class="far fa-calendar mx-1"></i><span >Overdue By {{data.dueDate | date:'d' }} day</span>  </p>
+          <p><i class="fa-solid fa-bottle-droplet"></i> 23</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

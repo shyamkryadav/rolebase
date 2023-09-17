@@ -2,9 +2,20 @@
  <div class="d-flex justify-content-around  my-5 ">
     <input type="text" ngModel  name="title" id="title" placeholder="Title"><br>
     
-    <input type="text" ngModel  name="priority" id="priority" placeholder="priority"><br>
+    <input type="text" ><br>
+    <select name="Status" ngModel  name="priority" id="priority" placeholder="priority" placeholder="status"  id="" >
+        <option value="High">High</option>
+        <option value="Normal">Normal</option>
+        <option value="Medium">Medium</option>
+    </select>
 
-    <input type="text" ngModel  name="status" id="Status" placeholder="status"><br>
+    <!-- <input type="text"id="Status" placeholder="status"><br> -->
+    <select name="Status" ngModel  name="status" placeholder="status"  id="" >
+        <option value="Closed">Closed</option>
+        <option value="Pending">Pending</option>
+        <option value="Reject">Reject</option>
+        <option value="Duplicate">Duplicate</option>
+    </select>
 
     <input type="date" ngModel  name="dueDate" id="dueDate" placeholder="dueDate"><br>
 
@@ -12,7 +23,6 @@
 
     <input type="text" ngModel name="requestType" id="requestType" placeholder="Request Type"><br>
  </div>
-
     <button class="btn btn-secondary">Add New Tickets</button>
 </form>
 

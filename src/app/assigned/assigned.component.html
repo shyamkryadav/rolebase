@@ -1,23 +1,23 @@
-<div class=" text-center ">
+<div class="container">
+  <div class=" text-center ">
 
     <mat-label>Title</mat-label>
-    <mat-form-field class="example-full-width  me-5">
-        <input matInput  (keyup)="applyFilter($event)" placeholder="Filter value" >
-    </mat-form-field>
-
+      <mat-form-field>
+        <input matInput placeholder="Search" [(ngModel)]="searchQuery" (input)="applyFilter()">
+      </mat-form-field>
     <mat-label class="ms-5">Priority</mat-label >
     <mat-form-field >
         <mat-select disableRipple>
-          <mat-option value="all">All</mat-option>
-          <mat-option value="2">Option 2</mat-option>
-          <mat-option value="3">Option 3</mat-option>
+          <mat-option value="All" (click)="allPriority()">All</mat-option>
+          <mat-option value="Normal" (click)="normalPriority()">Normal</mat-option>
+          <mat-option value="High" (click)="highPriority()">High</mat-option>
         </mat-select>
     </mat-form-field>
-</div>
+  </div>
 
 
 <!-- table section  -->
-<mat-table [dataSource]="allValue" class="mat-elevation-z8 ">
+  <mat-table [dataSource]="allValue" class="mat-elevation-z8  tableCont">
     <!-- Position Column -->
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef>Title </mat-header-cell>
@@ -57,3 +57,4 @@
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
+</div>
