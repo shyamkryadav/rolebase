@@ -21,9 +21,10 @@
     text-decoration: none;
 }
 
-.navBox .nav-item:hover{
+.active-link{
     background: white;
     border-top: 3px solid rgb(54, 82, 240);
+    padding-top: 17px ;
 
 }
 .navBox li a:hover{

@@ -27,14 +27,24 @@ export class OvredueTicketComponent {
       this.mainTicketData=data;
     })
    
+    
   }
-
+  // updateValue(event: any) {
+  //   const currentDateAsString = this.currentDate;
+  //   console.log(currentDateAsString); 
+  //   this.sliderValue = event.target.value;
+  //   const overdueDate = this.mainTicketData.filter((item:any) => item.id > this.sliderValue  );
+  //   console.log(overdueDate.dueDate)
+  //   this.ticketData=overdueDate;
+  // }
   updateValue(event: any) {
     const currentDateAsString = this.currentDate;
     console.log(currentDateAsString); 
     this.sliderValue = event.target.value;
-    const overdueDate = this.mainTicketData.filter((item:any) => item.id > this.sliderValue  );
+    const overdueDate = this.mainTicketData.filter((item:any) => item.id > this.sliderValue);
     console.log(overdueDate.dueDate)
     this.ticketData=overdueDate;
   }
+
+
 }

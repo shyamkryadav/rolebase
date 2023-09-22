@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AssignedFormComponent } from './assigned-form/assigned-form.component';
 import { OvredueTicketComponent } from './ovredue-ticket/ovredue-ticket.component';
 import { DatePipe } from '@angular/common';
+import { FormUpdateComponent } from './form-update/form-update.component';
 
 
 
@@ -29,7 +30,8 @@ import { DatePipe } from '@angular/common';
     AllTicketsComponent,
     AssignedComponent,
     AssignedFormComponent,
-    OvredueTicketComponent
+    OvredueTicketComponent,
+    FormUpdateComponent
   ],
   imports: [
     BrowserModule,

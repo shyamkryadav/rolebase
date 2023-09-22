@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ProxcyDataService } from '../services/proxcy-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-assigned-form',
@@ -8,7 +9,7 @@ import { ProxcyDataService } from '../services/proxcy-data.service';
   styleUrls: ['./assigned-form.component.css']
 })
 export class AssignedFormComponent {
-  constructor(private _ProxcyDataService:ProxcyDataService){
+  constructor(private _ProxcyDataService:ProxcyDataService, private _route:Router){
    
   }
 
@@ -18,5 +19,9 @@ export class AssignedFormComponent {
       })
 
       console.log(data)
+  }
+
+  gotoListPage(){
+    this._route.navigateByUrl('assigned');
   }
 }

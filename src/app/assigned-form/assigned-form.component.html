@@ -1,54 +1,23 @@
 <form #assignedForm="ngForm" (ngSubmit)="getFormData(assignedForm.value)"  >
- <div class="d-flex justify-content-around  my-5 ">
-    <input type="text" ngModel  name="title" id="title" placeholder="Title"><br>
-    
-    <input type="text" ><br>
-    <select name="Status" ngModel  name="priority" id="priority" placeholder="priority" placeholder="status"  id="" >
+ <div class="d-flex justify-content-around   my-5 inputBox ">
+    <input type="text" ngModel required #title="ngModel" name="title" id="title" placeholder="Title">
+    <select name="Status" ngModel  required #priority="ngModel"  name="priority" id="priority" placeholder="priority" placeholder="status"  id="" >
+        <option value="" disabled selected>Priority</option>
         <option value="High">High</option>
         <option value="Normal">Normal</option>
         <option value="Medium">Medium</option>
     </select>
-
-    <!-- <input type="text"id="Status" placeholder="status"><br> -->
-    <select name="Status" ngModel  name="status" placeholder="status"  id="" >
+    <select name="Status" ngModel required #status="ngModel"  name="status" placeholder="status"  id="">
+        <option value="" disabled selected>Status</option>
         <option value="Closed">Closed</option>
         <option value="Pending">Pending</option>
         <option value="Reject">Reject</option>
         <option value="Duplicate">Duplicate</option>
     </select>
-
-    <input type="date" ngModel  name="dueDate" id="dueDate" placeholder="dueDate"><br>
-
-    <input type="text" ngModel  name="department" id="department" placeholder="department"><br>
-
-    <input type="text" ngModel name="requestType" id="requestType" placeholder="Request Type"><br>
+    <input type="date" ngModel required #dueDate="ngModel" name="dueDate" id="dueDate" placeholder="dueDate"><br>
+    <input type="text" ngModel required #department="ngModel" name="department" id="department" placeholder="department"><br>
+    <input type="text" ngModel required #requestType="ngModel" name="requestType" id="requestType" placeholder="Request Type"><br>
  </div>
-    <button class="btn btn-secondary">Add New Tickets</button>
+    <button class="btn btn-primary p-2 mx-5" [disabled]="assignedForm.invalid" (click)="gotoListPage()">Add New Tickets</button>
 </form>
 
-
-
-
-<!-- <form #assignedForm="ngForm" (ngSubmit)="getFormData(assignedForm.value)" >
-
-    <label for="title">Title</label>
-    <input type="text" ngModel  name="title" id=""><br>
-
-    <label for="priority">Priority</label>
-    <input type="text" ngModel  name="priority" id=""><br>
-
-    <label for="Status">Status</label>
-    <input type="text" ngModel  name="status" id=""><br>
-
-    <label for="dueDate">Due Date</label>
-    <input type="text" ngModel  name="dueDate" id=""><br>
-
-    <label for="department">Department/label>
-    <input type="text" ngModel  name="department" id=""><br>
-
-    <label for="requestType">Requiest Type</label>
-    <input type="text" ngModel name="requestType" id=""><br>
-    
-    <button class="btn btn-secondary">Add New Tickets</button>
-
-</form> -->

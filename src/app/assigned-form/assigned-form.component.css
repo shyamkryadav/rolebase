@@ -1,0 +1,22 @@
+.inputBox{
+    /* width: 1200px; */
+    /* margin: auto; */
+}
+
+.inputBox input{
+    border-radius: 16px;
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.inputBox select{
+    border-radius: 16px;
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}

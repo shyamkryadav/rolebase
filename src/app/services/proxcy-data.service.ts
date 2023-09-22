@@ -10,7 +10,6 @@ url="http://localhost:3000/tickets";
   constructor(private http:HttpClient) { 
  
   }
-
      
   showAssingData():Observable<any> {
   return this.http.get(this.url)
@@ -20,10 +19,14 @@ url="http://localhost:3000/tickets";
    return this.http.post(this.url,data)
   }
 
-  
 
+  updateAssignData(item: any){
+    const url = `${this.url}/${item.id}`;
+    return this.http.put(url, item);
+  }
 
+  updateStudentData(id:number,data:any){
+    return this.http.put(`${this.url}/${id}`,data);
+  }
 
-  
- 
 }

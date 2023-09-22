@@ -19,29 +19,28 @@
     </div>
   </nav>
   
-  
   <ul class="nav navBox " style="background-color: #dbd6c9;">
-    <li class="nav-item   ">
-      <i class="far fa-circle-user  "></i>
-      <a class="nav-link active" aria-current="page" routerLink="allTicket"  routerLinkActive="active-link" >All Tickets</a>
-    </li>
+ 
     <li class="nav-item">
-     <i class='far fa-address-book'></i>
+      <i class="far fa-circle-user  " ></i>
+      <a class="nav-link active" aria-current="page" routerLink="allTicket"   >All Tickets</a>
+    </li>
+    <li class="nav-item" >
+     <i class='far fa-address-book' ></i>
      <a class="nav-link" routerLink="allTicket">My Tickets</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" routerLinkActive="active-link">
       <i class='far fa-address-card'></i>
       <a class="nav-link"  routerLink="assigned">Assigned to Me</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" routerLinkActive="active-link">
       <i class='far fa-clock'></i>
       <a class="nav-link" routerLink="overdue">Overdue Tickets</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" routerLinkActive="active-link">
       <i class='fas fa-circle-info'></i>
       <a class="nav-link" href="#">Inforamtion</a>
     </li>
-    
   </ul>
   
   <router-outlet></router-outlet>

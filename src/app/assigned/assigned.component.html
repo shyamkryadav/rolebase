@@ -21,7 +21,7 @@
     <!-- Position Column -->
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef>Title </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
+      <mat-cell *matCellDef="let element" (click)="onEditClicked(element.id)" style="color: blue; cursor: pointer;"> {{element.title}} </mat-cell>
     </ng-container>
   
     <!-- Name Column -->
@@ -55,6 +55,6 @@
     </ng-container>
   
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    <mat-row *matRowDef="let element; columns: displayedColumns;"  ></mat-row>
   </mat-table>
 </div>

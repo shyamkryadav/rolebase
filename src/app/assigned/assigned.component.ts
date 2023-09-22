@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ProxcyDataService } from '../services/proxcy-data.service';
 import { DateAdapter } from '@angular/material/core';
 import { filter, from, toArray } from 'rxjs';
-import { TitleStrategy } from '@angular/router';
+import { ActivatedRoute, Router, TitleStrategy } from '@angular/router';
 
 
 
@@ -32,7 +32,7 @@ export class AssignedComponent {
   allvalueData:any;
   searchQuery: string = '';
 
-  constructor(private _ProxcyDataService:ProxcyDataService){
+  constructor(private _ProxcyDataService:ProxcyDataService,private _activatedRoute:ActivatedRoute ,private _router:Router){
    
   }
 
@@ -63,19 +63,17 @@ export class AssignedComponent {
       item.title.toLowerCase().includes(filterValue) 
     );
     this.allValue=filteredData;
-
   }
 
   allPriority(){
     this.allValue=this.allvalueData;
   }
 
-  upadateData(id:string){
-    let tickedId= this.allValue.find((p: { id: string; })=>{
-      return  p.id ===id
-    });
-    // console.log(tickedId)
+
+  onEditClicked(id:any){
+   
   }
+
 
 
   
