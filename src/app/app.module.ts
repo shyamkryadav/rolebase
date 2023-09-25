@@ -32,7 +32,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     AssignedComponent,
     AssignedFormComponent,
     OvredueTicketComponent,
-    FormUpdateComponent
+    FormUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +48,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     HttpClientModule,
     DatePipe,
-    MatPaginatorModule
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

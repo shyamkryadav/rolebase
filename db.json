@@ -2,8 +2,8 @@
   "tickets": [
     {
       "title": "Parking pass",
-      "priority": "High",
-      "status": "Closed",
+      "priority": "Medium",
+      "status": "Reject",
       "dueDate": "2021-11-17",
       "department": "Facilities",
       "requestType": "Parking",
@@ -19,7 +19,7 @@
       "id": 6
     },
     {
-      "title": "New User accoutn ",
+      "title": "New accoutn ",
       "priority": "Normal",
       "status": "Closed",
       "dueDate": "2023-09-13",
@@ -46,12 +46,12 @@
       "id": 9
     },
     {
-      "title": "user",
-      "priority": "Medium",
-      "status": "Pending",
-      "dueDate": "2023-09-19",
-      "department": "demo",
-      "requestType": "demo",
+      "title": "userss",
+      "priority": "High",
+      "status": "Closed",
+      "dueDate": "2023-09-13",
+      "department": "demoss",
+      "requestType": "demoss",
       "id": 10
     },
     {
