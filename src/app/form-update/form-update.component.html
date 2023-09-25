@@ -1,24 +1,25 @@
-<form #assignedForm="ngForm" (ngSubmit)="getFormData(assignedForm.value)"  >
+<form #updateForm="ngForm" (ngSubmit)="updateFormData(updateForm.value)"  >
   <div class="d-flex justify-content-around   my-5 inputBox ">
-     <input type="text" ngModel required #title="ngModel" name="title" id="title" placeholder="Title">
-     <select name="Status" ngModel  required #priority="ngModel"  name="priority" id="priority" placeholder="priority" placeholder="status"  id="" >
+     <input type="text" ngModel name="title" id="title" placeholder="Title">
+     <select name="Status" ngModel   name="priority" id="priority" placeholder="priority" placeholder="status"  id="" >
          <option value="" disabled selected>Priority</option>
          <option value="High">High</option>
          <option value="Normal">Normal</option>
          <option value="Medium">Medium</option>
      </select>
-     <select name="Status" ngModel required #status="ngModel"  name="status" placeholder="status"  id="">
+     <select name="Status" ngModel   name="status" placeholder="status"  id="">
          <option value="" disabled selected>Status</option>
          <option value="Closed">Closed</option>
          <option value="Pending">Pending</option>
          <option value="Reject">Reject</option>
          <option value="Duplicate">Duplicate</option>
      </select>
-     <input type="date" ngModel required #dueDate="ngModel" name="dueDate" id="dueDate" placeholder="dueDate"><br>
-     <input type="text" ngModel required #department="ngModel" name="department" id="department" placeholder="department"><br>
-     <input type="text" ngModel required #requestType="ngModel" name="requestType" id="requestType" placeholder="Request Type"><br>
+     <input type="date" ngModel   name="dueDate" id="dueDate" placeholder="dueDate"><br>
+     <input type="text" ngModel name="department" id="department" placeholder="department"><br>
+     <input type="text" ngModel   name="requestType" id="requestType" placeholder="Request Type"><br>
   </div>
-     <button class="btn btn-primary p-2 mx-5" [disabled]="assignedForm.invalid">UpDate Tickets</button>
+     <button class="btn btn-primary p-2 mx-5" >Up
+    date Tickets</button>
  </form>
  
  

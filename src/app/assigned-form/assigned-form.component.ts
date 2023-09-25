@@ -13,15 +13,13 @@ export class AssignedFormComponent {
    
   }
 
+
   getFormData(data:any){
-      this._ProxcyDataService.getAssignData(data).subscribe((result)=>{
-        console.log(result)
-      })
+    this._ProxcyDataService.getAssignData(data).subscribe((result)=>{
+      console.log(result)
+    })
+    this._route.navigateByUrl('assigned')
+}
 
-      console.log(data)
-  }
 
-  gotoListPage(){
-    this._route.navigateByUrl('assigned');
-  }
 }

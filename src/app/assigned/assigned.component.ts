@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ProxcyDataService } from '../services/proxcy-data.service';
 import { DateAdapter } from '@angular/material/core';
 import { filter, from, toArray } from 'rxjs';
 import { ActivatedRoute, Router, TitleStrategy } from '@angular/router';
+import { MatPaginator } from '@angular/material/paginator';
 
 
 
@@ -31,6 +32,7 @@ export class AssignedComponent {
   allValue:any;
   allvalueData:any;
   searchQuery: string = '';
+  id:any;
 
   constructor(private _ProxcyDataService:ProxcyDataService,private _activatedRoute:ActivatedRoute ,private _router:Router){
    
@@ -42,8 +44,7 @@ export class AssignedComponent {
      this.allvalueData=data
     //  console.log(this.allValue)
     })
-    // this.filteredData()
-
+    this.id=this._activatedRoute.snapshot.params['id']
   }
   highPriority(){
     const highData = this.allvalueData.filter((item:any) => item.priority === "High");
@@ -73,7 +74,10 @@ export class AssignedComponent {
   onEditClicked(id:any){
    
   }
+  updateData(id:any){
+    console.log(id)
 
+  }
 
 
   

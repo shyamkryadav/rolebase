@@ -12,7 +12,8 @@ const routes: Routes = [
   {path:'allTicket',component:AllTicketsComponent},
   {path:'assigned-form',component:AssignedFormComponent},
   {path:'overdue',component:OvredueTicketComponent},
-  {path:'update',component:FormUpdateComponent},
+  {path:'assigned/:id',component:AssignedComponent},
+  {path:'update/:id',component:FormUpdateComponent},
 ];
 
 @NgModule({

@@ -20,6 +20,7 @@ import { AssignedFormComponent } from './assigned-form/assigned-form.component';
 import { OvredueTicketComponent } from './ovredue-ticket/ovredue-ticket.component';
 import { DatePipe } from '@angular/common';
 import { FormUpdateComponent } from './form-update/form-update.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
@@ -46,7 +47,8 @@ import { FormUpdateComponent } from './form-update/form-update.component';
     FormsModule,
     MatTableModule,
     HttpClientModule,
-    DatePipe
+    DatePipe,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

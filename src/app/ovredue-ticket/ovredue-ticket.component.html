@@ -4,6 +4,8 @@
 
     <input class="w-25 mx-5 fw-bold "
       type="range"
+
+      min="0" max="30"
       [(ngModel)]="sliderValue"
       (input)="updateValue($event)"
     /> 
@@ -19,22 +21,23 @@
           class="btn rounded-5 me-2 px-4 py-0"
           [ngClass]="{
             all: data.status == 'all',
-            pending: data.status == 'pending',
-            close: data.status == 'closed',
-            reject: data.status == 'reject',
-            duplicate: data.status == 'duplicate'
+            pending: data.status == 'Pending',
+            close: data.status == 'Closed',
+            reject: data.status == 'Reject',
+            duplicate: data.status == 'Duplicate'
           }"
         >
           {{ data.status }}
         </button>
-        <button class="btn btn-warning rounded-5 mx-2 px-4 py-0">High</button>
+        <button class="btn btn-white rounded-5 mx-2 px-4 py-0" [ngClass]="{high:data.priority=='High',normal:data.priority =='Normal',medium:data.priority=='Medium'}">{{data.priority}}</button>
         <div class="d-flex">
           <img src="../assets/img/user.jpg" width="20px" height="20px" alt="" />
           <h4 class="mx-2">Rexa Dorrani</h4>
         </div>
         <div class="d-flex justify-content-between">
+          <p><i class="far fa-calendar mx-1"></i><span >Overdue By {{data.dueDate | date }} day</span>  </p> <br>
           <p><i class="far fa-calendar mx-1"></i><span >Overdue By {{data.dueDate | date:'d' }} day</span>  </p>
-          <p><i class="fa-solid fa-bottle-droplet"></i> 23</p>
+          <p><i class="fa-solid fa-bottle-droplet"></i> {{data.id}}</p>
         </div>
       </section>
     </div>

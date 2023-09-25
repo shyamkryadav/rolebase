@@ -1,175 +1,67 @@
 {
   "tickets": [
     {
-      "title": "hardware",
-      "priority": "no",
-      "status": "Pending",
-      "dueDate": "2023-08-08",
-      "department": "medical",
-      "requestType": "mobiel issue",
+      "title": "Parking pass",
+      "priority": "High",
+      "status": "Closed",
+      "dueDate": "2021-11-17",
+      "department": "Facilities",
+      "requestType": "Parking",
       "id": 5
     },
     {
-      "title": "hardware",
-      "priority": "no",
-      "status": "Pending",
-      "dueDate": "2023-08-08",
-      "department": "medical",
-      "requestType": "mobiel issue",
+      "title": "New Cards",
+      "priority": "Normal",
+      "status": "Duplicate",
+      "dueDate": "2023-08-21",
+      "department": "It",
+      "requestType": "Computer Issue",
       "id": 6
     },
     {
-      "title": "bus",
+      "title": "New User accoutn ",
       "priority": "Normal",
-      "status": "Reject",
-      "dueDate": "2023-09-06",
-      "department": "electrical",
-      "requestType": "10",
+      "status": "Closed",
+      "dueDate": "2023-09-13",
+      "department": "It",
+      "requestType": "New User",
+      "id": 7
+    },
+    {
+      "title": "New parking rag",
+      "priority": "High",
+      "status": "Closed",
+      "dueDate": "2023-09-14",
+      "department": "Marketing",
+      "requestType": "Parking",
       "id": 8
     },
     {
-      "title": "dssa",
+      "title": "demo",
       "priority": "Normal",
       "status": "Reject",
       "dueDate": "2023-09-12",
-      "department": "medical",
+      "department": "Ecommerce",
       "requestType": "mobiel issue",
-      "id": 14
+      "id": 9
     },
     {
-      "title": "dssa",
-      "priority": "Normal",
-      "status": "Reject",
-      "dueDate": "2023-09-12",
-      "department": "medical",
-      "requestType": "mobiel issue",
-      "id": 15
-    },
-    {
-      "title": "shyam",
-      "priority": "Normal",
-      "status": "Duplicated",
-      "dueDate": "2023-09-25",
-      "department": "medical",
-      "requestType": "good",
-      "id": 16
-    },
-    {
-      "title": "shyam",
-      "priority": "Normal",
-      "status": "Pending",
-      "dueDate": "2023-08-30",
-      "department": "shop",
-      "requestType": "goods",
-      "id": 17
-    },
-    {
-      "title": "Ram",
-      "priority": "Normal",
-      "status": "Pending",
-      "dueDate": "2023-09-07",
-      "department": "Ecommerce",
-      "requestType": "water",
-      "id": 18
-    },
-    {
-      "title": "zczc",
-      "priority": "Normal",
-      "status": "Closed",
-      "dueDate": "2023-09-26",
-      "department": "Ecommerce",
-      "requestType": "xcvxc",
-      "id": 19
-    },
-    {
-      "title": "zczc",
-      "priority": "Normal",
-      "status": "Closed",
-      "dueDate": "2023-09-26",
-      "department": "Ecommerce",
-      "requestType": "xcvxc",
-      "id": 20
-    },
-    {
-      "title": "fgsdg",
-      "priority": "High",
-      "status": "Pending",
-      "dueDate": "2023-09-05",
-      "department": "sdfgsdg",
-      "requestType": "dsfgsdg",
-      "id": 21
-    },
-    {
-      "title": "fgsdg",
-      "priority": "Normal",
-      "status": "Closed",
-      "dueDate": "2023-09-05",
-      "department": "sdfgsdg",
-      "requestType": "dsfgsdg",
-      "id": 22
-    },
-    {
-      "title": "adfa",
-      "priority": "High",
-      "status": "Reject",
-      "dueDate": "2023-08-30",
-      "department": "sdf",
-      "requestType": "dfs",
-      "id": 24
-    },
-    {
-      "title": "sdfas",
+      "title": "user",
       "priority": "Medium",
       "status": "Pending",
-      "dueDate": "2023-09-05",
-      "department": "d",
-      "requestType": "sadfasdf",
-      "id": 25
+      "dueDate": "2023-09-19",
+      "department": "demo",
+      "requestType": "demo",
+      "id": 10
     },
     {
-      "title": "fsgs",
-      "priority": "Normal",
-      "status": "Reject",
-      "dueDate": "2023-09-12",
-      "department": "sgs",
-      "requestType": "fsdgsdf",
-      "id": 26
-    },
-    {
-      "title": "sdf",
-      "priority": "High",
-      "status": "Closed",
-      "dueDate": "2023-09-11",
-      "department": "sdf",
-      "requestType": "dgsad",
-      "id": 27
-    },
-    {
-      "title": "shyam ",
+      "title": "computer",
       "priority": "High",
       "status": "Duplicate",
       "dueDate": "2023-09-12",
-      "department": "Ecommerce",
-      "requestType": "dsfgsdg",
-      "id": 28
-    },
-    {
-      "title": "shyam ",
-      "priority": "High",
-      "status": "Duplicate",
-      "dueDate": "2023-09-12",
-      "department": "Ecommerce",
-      "requestType": "dsfgsdg",
-      "id": 29
-    },
-    {
-      "title": "shyam ",
-      "priority": "High",
-      "status": "Duplicate",
-      "dueDate": "2023-09-12",
-      "department": "Ecommerce",
-      "requestType": "dsfgsdg",
-      "id": 30
+      "department": "dell",
+      "requestType": "laptop",
+      "id": 11
     }
   ]
 }

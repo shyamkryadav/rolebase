@@ -25,8 +25,12 @@ url="http://localhost:3000/tickets";
     return this.http.put(url, item);
   }
 
-  updateStudentData(id:number,data:any){
+  updateTicketData(id:number,data:any){
     return this.http.put(`${this.url}/${id}`,data);
+  }
+
+  getticketById(id:any){
+    return this.http.get(`${this.url}/${id}`)
   }
 
 }
