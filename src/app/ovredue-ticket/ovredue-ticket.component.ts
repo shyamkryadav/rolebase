@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ProxcyDataService } from '../services/proxcy-data.service';
-import { DateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-ovredue-ticket',
@@ -29,10 +28,9 @@ export class OvredueTicketComponent {
     // const currentDateAsString = this.currentDate;
     this.sliderValue = event.target.value;
     // console.log(currentDateAsString.getDay())
-    // console.log(this.sliderValue)
 
-    const overdueDate = this.mainTicketData.filter((item:any) => item.id  <= this.sliderValue);
-    console.log(overdueDate.dueDate)
+    const overdueDate = this.mainTicketData.filter((item:any) => item.dueDate >= this.sliderValue);
+    console.log(overdueDate)
     this.ticketData=overdueDate;
 
 

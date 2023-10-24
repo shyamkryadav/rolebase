@@ -69,10 +69,7 @@ export class AssignedComponent {
   allPriority(){
     this.allValue=this.allvalueData;
   }
-
-
   onEditClicked(id:any){
-   
   }
   updateData(id:any){
     console.log(id)

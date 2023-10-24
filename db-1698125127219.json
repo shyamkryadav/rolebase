@@ -1,0 +1,67 @@
+{
+  "tickets": [
+    {
+      "title": "Parking pass",
+      "priority": "Medium",
+      "status": "Reject",
+      "dueDate": "2021-11-17",
+      "department": "Facilities",
+      "requestType": "Parking",
+      "id": 5
+    },
+    {
+      "title": "New Cards",
+      "priority": "Normal",
+      "status": "Duplicate",
+      "dueDate": "2023-08-21",
+      "department": "It",
+      "requestType": "Computer Issue",
+      "id": 6
+    },
+    {
+      "title": "New accoutn ",
+      "priority": "Normal",
+      "status": "Closed",
+      "dueDate": "2023-09-13",
+      "department": "It",
+      "requestType": "New User",
+      "id": 7
+    },
+    {
+      "title": "New parking rag",
+      "priority": "High",
+      "status": "Closed",
+      "dueDate": "2023-09-14",
+      "department": "Marketing",
+      "requestType": "Parking",
+      "id": 8
+    },
+    {
+      "title": "demo",
+      "priority": "Normal",
+      "status": "Reject",
+      "dueDate": "2023-09-12",
+      "department": "Ecommerce",
+      "requestType": "mobiel issue",
+      "id": 9
+    },
+    {
+      "title": "userss",
+      "priority": "High",
+      "status": "Closed",
+      "dueDate": "2023-09-13",
+      "department": "demoss",
+      "requestType": "demoss",
+      "id": 10
+    },
+    {
+      "title": "computer",
+      "priority": "High",
+      "status": "Duplicate",
+      "dueDate": "2023-09-12",
+      "department": "dell",
+      "requestType": "laptop",
+      "id": 11
+    }
+  ]
+}
