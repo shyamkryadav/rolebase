@@ -14,7 +14,7 @@
     </mat-form-field>
   </div>
 <!-- table section  -->
-  <mat-table [dataSource]="allValue" class="mat-elevation-z8  tableCont">
+  <mat-table [dataSource]="allValue" class="mat-elevation-z8  tableCont" id="print-tableprint-table">
     <!-- Position Column -->
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef>Title </mat-header-cell>
@@ -48,4 +48,8 @@
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let element; columns: displayedColumns;"  ></mat-row>
   </mat-table>
+</div>
+
+<div>
+  <button (click)="printTable()"> Download</button>
 </div>

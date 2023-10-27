@@ -21,6 +21,7 @@ import { OvredueTicketComponent } from './ovredue-ticket/ovredue-ticket.componen
 import { DatePipe } from '@angular/common';
 import { FormUpdateComponent } from './form-update/form-update.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { InforamtionComponent } from './inforamtion/inforamtion.component';
 
 
 
@@ -33,6 +34,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     AssignedFormComponent,
     OvredueTicketComponent,
     FormUpdateComponent,
+    InforamtionComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { DateAdapter } from '@angular/material/core';
 import { filter, from, toArray } from 'rxjs';
 import { ActivatedRoute, Router, TitleStrategy } from '@angular/router';
 import { MatPaginator } from '@angular/material/paginator';
+import { CdkVirtualScrollableWindow } from '@angular/cdk/scrolling';
 
 
 
@@ -76,6 +77,16 @@ export class AssignedComponent {
 
   }
 
+  printTable() {
+    const tableContents = document.getElementById('print-table')!.outerHTML;
+    const originalContents = document.body.innerHTML;
+
+    document.body.innerHTML != tableContents;
+    window.print();
+
+    // Restore the original content
+    document.body.innerHTML = originalContents;
+  }
 
   
 }

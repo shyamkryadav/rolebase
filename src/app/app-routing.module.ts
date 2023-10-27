@@ -5,6 +5,7 @@ import { AllTicketsComponent } from './all-tickets/all-tickets.component';
 import { AssignedFormComponent } from './assigned-form/assigned-form.component';
 import { OvredueTicketComponent } from './ovredue-ticket/ovredue-ticket.component';
 import { FormUpdateComponent } from './form-update/form-update.component';
+import { InforamtionComponent } from './inforamtion/inforamtion.component';
 
 const routes: Routes = [
   {path:'',component:AllTicketsComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'overdue',component:OvredueTicketComponent},
   {path:'assigned/:id',component:AssignedComponent},
   {path:'update/:id',component:FormUpdateComponent},
+  {path:'inforamtion',component:InforamtionComponent},
 ];
 
 @NgModule({

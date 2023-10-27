@@ -1,0 +1,16 @@
+<form #orderForm="ngForm">
+    <label for="orderDate">Order Date</label>
+    <input type="date" id="orderDate" name="orderDate" [(ngModel)]="orderDate" required #orderDateInput>
+    <div *ngIf="orderDateInput.invalid && (orderDateInput.dirty || orderDateInput.touched)">
+      <div *ngIf="orderDateInput.errors.required">Order date is required.</div>
+    </div>
+  
+    <label for="deliveryDate">Delivery Date</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" [(ngModel)]="deliveryDate" required #deliveryDateInput>
+    <div *ngIf="deliveryDateInput.invalid && (deliveryDateInput.dirty || deliveryDateInput.touched)">
+      <div *ngIf="deliveryDateInput.errors.required">Delivery date is required.</div>
+      <div *ngIf="orderDate && deliveryDateInput.errors.invalidDateRange">Delivery date must be after the order date.</div>
+    </div>
+  </form>
+  
+  <input type="date" id="deliveryDate" name="deliveryDate" [(ngModel)]="deliveryDate" required #deliveryDateInput (ngModelChange)="onDeliveryDateChange()">
